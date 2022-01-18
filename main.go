@@ -206,12 +206,10 @@ func RunCMD(args []string) {
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 
-	err := cmd.Run()
+	err := cmd.Start()
 	if err != nil {
 		fmt.Println(err)
 	}
-
-	cmd.Wait()
 }
 
 // FileExists checks if a file exists and is not a directory before we
