@@ -93,7 +93,7 @@ func main() {
 		}
 
 		execPath := filepath.Dir(executable)
-		execArgs = []string{"PolyMC.exe", "--import", pack}
+		execArgs = []string{"MultiMC.exe", "--import", pack}
 		iconPath = execPath + "\\icons\\" + addonInfo.Name
 	}
 
